@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:modelhandling/chat_screen.dart';
 import 'package:modelhandling/homepage.dart';
 import 'package:modelhandling/studentmodel.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
-
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Supabase.initialize(
@@ -21,10 +21,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
+        
 
-        colorScheme: .fromSeed(seedColor: Colors.deepPurple),
-      ),
-      home: Homepage(),
+        colorScheme: .fromSeed(seedColor: Colors.deepPurple)),
+      home: ChatPage(username: "John Doe"),
     );
   }
 }

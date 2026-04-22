@@ -14,6 +14,7 @@ class _HomepageState extends State<Homepage> {
   TextEditingController number2 = TextEditingController();
   double total = 0;
 
+@override
   void initState() {
     title = "Welcome to Homepage";
     number1.text = "0";
